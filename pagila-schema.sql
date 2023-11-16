@@ -1299,7 +1299,7 @@ ALTER TABLE ONLY public.payment_p2022_02 ATTACH PARTITION public.payment_p2022_0
 -- Name: payment_p2022_03; Type: TABLE ATTACH; Schema: public; Owner: postgres
 --
 
-ALTER TABLE ONLY public.payment ATTACH PARTITION public.payment_p2022_03 FOR VALUES FROM ('2022-03-01 00:00:00+00') TO ('2022-04-01 01:00:00+01');
+ALTER TABLE ONLY public.payment ATTACH PARTITION public.payment_p2022_03 FOR VALUES FROM ('2022-03-01 00:00:00+00') TO ('2022-04-01 00:00:00+00');
 
 
 --
@@ -1320,84 +1320,84 @@ ALTER TABLE ONLY public.payment_p2022_03 ATTACH PARTITION public.payment_p2022_0
 -- Name: payment_p2022_04; Type: TABLE ATTACH; Schema: public; Owner: postgres
 --
 
-ALTER TABLE ONLY public.payment ATTACH PARTITION public.payment_p2022_04 FOR VALUES FROM ('2022-04-01 01:00:00+01') TO ('2022-05-01 01:00:00+01');
+ALTER TABLE ONLY public.payment ATTACH PARTITION public.payment_p2022_04 FOR VALUES FROM ('2022-04-01 00:00:00+00') TO ('2022-05-01 00:00:00+00');
 
 
 --
 -- Name: payment_p2022_04_01; Type: TABLE ATTACH; Schema: public; Owner: postgres
 --
 
-ALTER TABLE ONLY public.payment_p2022_04 ATTACH PARTITION public.payment_p2022_04_01 FOR VALUES FROM ('2022-04-01 00:00:00+01') TO ('2022-04-16 00:00:00+01');
+ALTER TABLE ONLY public.payment_p2022_04 ATTACH PARTITION public.payment_p2022_04_01 FOR VALUES FROM ('2022-04-01 00:00:00+00') TO ('2022-04-16 00:00:00+00');
 
 
 --
 -- Name: payment_p2022_04_02; Type: TABLE ATTACH; Schema: public; Owner: postgres
 --
 
-ALTER TABLE ONLY public.payment_p2022_04 ATTACH PARTITION public.payment_p2022_04_02 FOR VALUES FROM ('2022-04-16 00:00:00+01') TO ('2022-05-01 00:00:00+01');
+ALTER TABLE ONLY public.payment_p2022_04 ATTACH PARTITION public.payment_p2022_04_02 FOR VALUES FROM ('2022-04-16 00:00:00+00') TO ('2022-05-01 00:00:00+00');
 
 
 --
 -- Name: payment_p2022_05; Type: TABLE ATTACH; Schema: public; Owner: postgres
 --
 
-ALTER TABLE ONLY public.payment ATTACH PARTITION public.payment_p2022_05 FOR VALUES FROM ('2022-05-01 01:00:00+01') TO ('2022-06-01 01:00:00+01');
+ALTER TABLE ONLY public.payment ATTACH PARTITION public.payment_p2022_05 FOR VALUES FROM ('2022-05-01 00:00:00+00') TO ('2022-06-01 00:00:00+00');
 
 
 --
 -- Name: payment_p2022_05_01; Type: TABLE ATTACH; Schema: public; Owner: postgres
 --
 
-ALTER TABLE ONLY public.payment_p2022_05 ATTACH PARTITION public.payment_p2022_05_01 FOR VALUES FROM ('2022-05-01 01:00:00+01') TO ('2022-05-16 01:00:00+01');
+ALTER TABLE ONLY public.payment_p2022_05 ATTACH PARTITION public.payment_p2022_05_01 FOR VALUES FROM ('2022-05-01 00:00:00+00') TO ('2022-05-16 00:00:00+00');
 
 
 --
 -- Name: payment_p2022_05_02; Type: TABLE ATTACH; Schema: public; Owner: postgres
 --
 
-ALTER TABLE ONLY public.payment_p2022_05 ATTACH PARTITION public.payment_p2022_05_02 FOR VALUES FROM ('2022-05-16 01:00:00+01') TO ('2022-06-01 01:00:00+01');
+ALTER TABLE ONLY public.payment_p2022_05 ATTACH PARTITION public.payment_p2022_05_02 FOR VALUES FROM ('2022-05-16 00:00:00+00') TO ('2022-06-01 00:00:00+00');
 
 
 --
 -- Name: payment_p2022_06; Type: TABLE ATTACH; Schema: public; Owner: postgres
 --
 
-ALTER TABLE ONLY public.payment ATTACH PARTITION public.payment_p2022_06 FOR VALUES FROM ('2022-06-01 01:00:00+01') TO ('2022-07-01 01:00:00+01');
+ALTER TABLE ONLY public.payment ATTACH PARTITION public.payment_p2022_06 FOR VALUES FROM ('2022-06-01 00:00:00+00') TO ('2022-07-01 00:00:00+00');
 
 
 --
 -- Name: payment_p2022_06_01; Type: TABLE ATTACH; Schema: public; Owner: postgres
 --
 
-ALTER TABLE ONLY public.payment_p2022_06 ATTACH PARTITION public.payment_p2022_06_01 FOR VALUES FROM ('2022-06-01 01:00:00+01') TO ('2022-06-16 01:00:00+01');
+ALTER TABLE ONLY public.payment_p2022_06 ATTACH PARTITION public.payment_p2022_06_01 FOR VALUES FROM ('2022-06-01 00:00:00+00') TO ('2022-06-16 00:00:00+00');
 
 
 --
 -- Name: payment_p2022_06_02; Type: TABLE ATTACH; Schema: public; Owner: postgres
 --
 
-ALTER TABLE ONLY public.payment_p2022_06 ATTACH PARTITION public.payment_p2022_06_02 FOR VALUES FROM ('2022-06-16 01:00:00+01') TO ('2022-07-01 01:00:00+01');
+ALTER TABLE ONLY public.payment_p2022_06 ATTACH PARTITION public.payment_p2022_06_02 FOR VALUES FROM ('2022-06-16 00:00:00+00') TO ('2022-07-01 00:00:00+00');
 
 
 --
 -- Name: payment_p2022_07; Type: TABLE ATTACH; Schema: public; Owner: postgres
 --
 
-ALTER TABLE ONLY public.payment ATTACH PARTITION public.payment_p2022_07 FOR VALUES FROM ('2022-07-01 01:00:00+01') TO ('2022-08-01 01:00:00+01');
+ALTER TABLE ONLY public.payment ATTACH PARTITION public.payment_p2022_07 FOR VALUES FROM ('2022-07-01 00:00:00+00') TO ('2022-08-01 00:00:00+00');
 
 
 --
 -- Name: payment_p2022_07_01; Type: TABLE ATTACH; Schema: public; Owner: postgres
 --
 
-ALTER TABLE ONLY public.payment_p2022_07 ATTACH PARTITION public.payment_p2022_07_01 FOR VALUES FROM ('2022-07-01 01:00:00+01') TO ('2022-07-16 01:00:00+01');
+ALTER TABLE ONLY public.payment_p2022_07 ATTACH PARTITION public.payment_p2022_07_01 FOR VALUES FROM ('2022-07-01 00:00:00+00') TO ('2022-07-16 00:00:00+00');
 
 
 --
 -- Name: payment_p2022_07_02; Type: TABLE ATTACH; Schema: public; Owner: postgres
 --
 
-ALTER TABLE ONLY public.payment_p2022_07 ATTACH PARTITION public.payment_p2022_07_02 FOR VALUES FROM ('2022-07-16 01:00:00+01') TO ('2022-08-01 01:00:00+01');
+ALTER TABLE ONLY public.payment_p2022_07 ATTACH PARTITION public.payment_p2022_07_02 FOR VALUES FROM ('2022-07-16 00:00:00+00') TO ('2022-08-01 00:00:00+00');
 
 
 --
