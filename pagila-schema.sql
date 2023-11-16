@@ -759,10 +759,41 @@ CREATE TABLE public.payment_p2022_01 (
     rental_id integer NOT NULL,
     amount numeric(5,2) NOT NULL,
     payment_date timestamp with time zone NOT NULL
-);
+)
+PARTITION BY RANGE (payment_date);
 
 
 ALTER TABLE public.payment_p2022_01 OWNER TO postgres;
+
+--
+-- Name: payment_p2022_01_01; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.payment_p2022_01_01 (
+    payment_id integer DEFAULT nextval('public.payment_payment_id_seq'::regclass) NOT NULL,
+    customer_id integer NOT NULL,
+    staff_id integer NOT NULL,
+    rental_id integer NOT NULL,
+    amount numeric(5,2) NOT NULL,
+    payment_date timestamp with time zone NOT NULL
+);
+
+ALTER TABLE public.payment_p2022_01_01 OWNER TO postgres;
+
+--
+-- Name: payment_p2022_01_02; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.payment_p2022_01_02 (
+    payment_id integer DEFAULT nextval('public.payment_payment_id_seq'::regclass) NOT NULL,
+    customer_id integer NOT NULL,
+    staff_id integer NOT NULL,
+    rental_id integer NOT NULL,
+    amount numeric(5,2) NOT NULL,
+    payment_date timestamp with time zone NOT NULL
+);
+
+ALTER TABLE public.payment_p2022_01_02 OWNER TO postgres;
 
 --
 -- Name: payment_p2022_02; Type: TABLE; Schema: public; Owner: postgres
@@ -775,10 +806,41 @@ CREATE TABLE public.payment_p2022_02 (
     rental_id integer NOT NULL,
     amount numeric(5,2) NOT NULL,
     payment_date timestamp with time zone NOT NULL
-);
+)
+PARTITION BY RANGE (payment_date);
 
 
 ALTER TABLE public.payment_p2022_02 OWNER TO postgres;
+
+--
+-- Name: payment_p2022_02_01; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.payment_p2022_02_01 (
+    payment_id integer DEFAULT nextval('public.payment_payment_id_seq'::regclass) NOT NULL,
+    customer_id integer NOT NULL,
+    staff_id integer NOT NULL,
+    rental_id integer NOT NULL,
+    amount numeric(5,2) NOT NULL,
+    payment_date timestamp with time zone NOT NULL
+);
+
+ALTER TABLE public.payment_p2022_02_01 OWNER TO postgres;
+
+--
+-- Name: payment_p2022_02_02; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.payment_p2022_02_02 (
+    payment_id integer DEFAULT nextval('public.payment_payment_id_seq'::regclass) NOT NULL,
+    customer_id integer NOT NULL,
+    staff_id integer NOT NULL,
+    rental_id integer NOT NULL,
+    amount numeric(5,2) NOT NULL,
+    payment_date timestamp with time zone NOT NULL
+);
+
+ALTER TABLE public.payment_p2022_02_02 OWNER TO postgres;
 
 --
 -- Name: payment_p2022_03; Type: TABLE; Schema: public; Owner: postgres
@@ -791,10 +853,41 @@ CREATE TABLE public.payment_p2022_03 (
     rental_id integer NOT NULL,
     amount numeric(5,2) NOT NULL,
     payment_date timestamp with time zone NOT NULL
-);
+)
+PARTITION BY RANGE (payment_date);
 
 
 ALTER TABLE public.payment_p2022_03 OWNER TO postgres;
+
+--
+-- Name: payment_p2022_03_01; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.payment_p2022_03_01 (
+    payment_id integer DEFAULT nextval('public.payment_payment_id_seq'::regclass) NOT NULL,
+    customer_id integer NOT NULL,
+    staff_id integer NOT NULL,
+    rental_id integer NOT NULL,
+    amount numeric(5,2) NOT NULL,
+    payment_date timestamp with time zone NOT NULL
+);
+
+ALTER TABLE public.payment_p2022_03_01 OWNER TO postgres;
+
+--
+-- Name: payment_p2022_03_02; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.payment_p2022_03_02 (
+    payment_id integer DEFAULT nextval('public.payment_payment_id_seq'::regclass) NOT NULL,
+    customer_id integer NOT NULL,
+    staff_id integer NOT NULL,
+    rental_id integer NOT NULL,
+    amount numeric(5,2) NOT NULL,
+    payment_date timestamp with time zone NOT NULL
+);
+
+ALTER TABLE public.payment_p2022_03_02 OWNER TO postgres;
 
 --
 -- Name: payment_p2022_04; Type: TABLE; Schema: public; Owner: postgres
@@ -807,10 +900,41 @@ CREATE TABLE public.payment_p2022_04 (
     rental_id integer NOT NULL,
     amount numeric(5,2) NOT NULL,
     payment_date timestamp with time zone NOT NULL
-);
+)
+PARTITION BY RANGE (payment_date);
 
 
 ALTER TABLE public.payment_p2022_04 OWNER TO postgres;
+
+--
+-- Name: payment_p2022_04_01; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.payment_p2022_04_01 (
+    payment_id integer DEFAULT nextval('public.payment_payment_id_seq'::regclass) NOT NULL,
+    customer_id integer NOT NULL,
+    staff_id integer NOT NULL,
+    rental_id integer NOT NULL,
+    amount numeric(5,2) NOT NULL,
+    payment_date timestamp with time zone NOT NULL
+);
+
+ALTER TABLE public.payment_p2022_04_01 OWNER TO postgres;
+
+--
+-- Name: payment_p2022_04_02; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.payment_p2022_04_02 (
+    payment_id integer DEFAULT nextval('public.payment_payment_id_seq'::regclass) NOT NULL,
+    customer_id integer NOT NULL,
+    staff_id integer NOT NULL,
+    rental_id integer NOT NULL,
+    amount numeric(5,2) NOT NULL,
+    payment_date timestamp with time zone NOT NULL
+);
+
+ALTER TABLE public.payment_p2022_04_02 OWNER TO postgres;
 
 --
 -- Name: payment_p2022_05; Type: TABLE; Schema: public; Owner: postgres
@@ -823,10 +947,41 @@ CREATE TABLE public.payment_p2022_05 (
     rental_id integer NOT NULL,
     amount numeric(5,2) NOT NULL,
     payment_date timestamp with time zone NOT NULL
-);
+)
+PARTITION BY RANGE (payment_date);
 
 
 ALTER TABLE public.payment_p2022_05 OWNER TO postgres;
+
+--
+-- Name: payment_p2022_05_01; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.payment_p2022_05_01 (
+    payment_id integer DEFAULT nextval('public.payment_payment_id_seq'::regclass) NOT NULL,
+    customer_id integer NOT NULL,
+    staff_id integer NOT NULL,
+    rental_id integer NOT NULL,
+    amount numeric(5,2) NOT NULL,
+    payment_date timestamp with time zone NOT NULL
+);
+
+ALTER TABLE public.payment_p2022_05_01 OWNER TO postgres;
+
+--
+-- Name: payment_p2022_05_02; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.payment_p2022_05_02 (
+    payment_id integer DEFAULT nextval('public.payment_payment_id_seq'::regclass) NOT NULL,
+    customer_id integer NOT NULL,
+    staff_id integer NOT NULL,
+    rental_id integer NOT NULL,
+    amount numeric(5,2) NOT NULL,
+    payment_date timestamp with time zone NOT NULL
+);
+
+ALTER TABLE public.payment_p2022_05_02 OWNER TO postgres;
 
 --
 -- Name: payment_p2022_06; Type: TABLE; Schema: public; Owner: postgres
@@ -839,10 +994,41 @@ CREATE TABLE public.payment_p2022_06 (
     rental_id integer NOT NULL,
     amount numeric(5,2) NOT NULL,
     payment_date timestamp with time zone NOT NULL
-);
+)
+PARTITION BY RANGE (payment_date);
 
 
 ALTER TABLE public.payment_p2022_06 OWNER TO postgres;
+
+--
+-- Name: payment_p2022_06_01; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.payment_p2022_06_01 (
+    payment_id integer DEFAULT nextval('public.payment_payment_id_seq'::regclass) NOT NULL,
+    customer_id integer NOT NULL,
+    staff_id integer NOT NULL,
+    rental_id integer NOT NULL,
+    amount numeric(5,2) NOT NULL,
+    payment_date timestamp with time zone NOT NULL
+);
+
+ALTER TABLE public.payment_p2022_06_01 OWNER TO postgres;
+
+--
+-- Name: payment_p2022_06_02; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.payment_p2022_06_02 (
+    payment_id integer DEFAULT nextval('public.payment_payment_id_seq'::regclass) NOT NULL,
+    customer_id integer NOT NULL,
+    staff_id integer NOT NULL,
+    rental_id integer NOT NULL,
+    amount numeric(5,2) NOT NULL,
+    payment_date timestamp with time zone NOT NULL
+);
+
+ALTER TABLE public.payment_p2022_06_02 OWNER TO postgres;
 
 --
 -- Name: payment_p2022_07; Type: TABLE; Schema: public; Owner: postgres
@@ -855,10 +1041,41 @@ CREATE TABLE public.payment_p2022_07 (
     rental_id integer NOT NULL,
     amount numeric(5,2) NOT NULL,
     payment_date timestamp with time zone NOT NULL
-);
+)
+PARTITION BY RANGE (payment_date);
 
 
 ALTER TABLE public.payment_p2022_07 OWNER TO postgres;
+
+--
+-- Name: payment_p2022_07_01; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.payment_p2022_07_01 (
+    payment_id integer DEFAULT nextval('public.payment_payment_id_seq'::regclass) NOT NULL,
+    customer_id integer NOT NULL,
+    staff_id integer NOT NULL,
+    rental_id integer NOT NULL,
+    amount numeric(5,2) NOT NULL,
+    payment_date timestamp with time zone NOT NULL
+);
+
+ALTER TABLE public.payment_p2022_07_01 OWNER TO postgres;
+
+--
+-- Name: payment_p2022_07_02; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.payment_p2022_07_02 (
+    payment_id integer DEFAULT nextval('public.payment_payment_id_seq'::regclass) NOT NULL,
+    customer_id integer NOT NULL,
+    staff_id integer NOT NULL,
+    rental_id integer NOT NULL,
+    amount numeric(5,2) NOT NULL,
+    payment_date timestamp with time zone NOT NULL
+);
+
+ALTER TABLE public.payment_p2022_07_02 OWNER TO postgres;
 
 --
 -- Name: rental_rental_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
@@ -1044,10 +1261,38 @@ ALTER TABLE ONLY public.payment ATTACH PARTITION public.payment_p2022_01 FOR VAL
 
 
 --
+-- Name: payment_p2022_01_01; Type: TABLE ATTACH; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.payment_p2022_01 ATTACH PARTITION public.payment_p2022_01_01 FOR VALUES FROM ('2022-01-01 00:00:00+00') TO ('2022-01-16 00:00:00+00');
+
+
+--
+-- Name: payment_p2022_01_02; Type: TABLE ATTACH; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.payment_p2022_01 ATTACH PARTITION public.payment_p2022_01_02 FOR VALUES FROM ('2022-01-16 00:00:00+00') TO ('2022-02-01 00:00:00+00');
+
+
+--
 -- Name: payment_p2022_02; Type: TABLE ATTACH; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public.payment ATTACH PARTITION public.payment_p2022_02 FOR VALUES FROM ('2022-02-01 00:00:00+00') TO ('2022-03-01 00:00:00+00');
+
+
+--
+-- Name: payment_p2022_02_01; Type: TABLE ATTACH; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.payment_p2022_02 ATTACH PARTITION public.payment_p2022_02_01 FOR VALUES FROM ('2022-02-01 00:00:00+00') TO ('2022-02-16 00:00:00+00');
+
+
+--
+-- Name: payment_p2022_02_02; Type: TABLE ATTACH; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.payment_p2022_02 ATTACH PARTITION public.payment_p2022_02_02 FOR VALUES FROM ('2022-02-16 00:00:00+00') TO ('2022-03-01 00:00:00+00');
 
 
 --
@@ -1058,10 +1303,38 @@ ALTER TABLE ONLY public.payment ATTACH PARTITION public.payment_p2022_03 FOR VAL
 
 
 --
+-- Name: payment_p2022_03_01; Type: TABLE ATTACH; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.payment_p2022_03 ATTACH PARTITION public.payment_p2022_03_01 FOR VALUES FROM ('2022-03-01 00:00:00+00') TO ('2022-03-16 00:00:00+00');
+
+
+--
+-- Name: payment_p2022_03_02; Type: TABLE ATTACH; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.payment_p2022_03 ATTACH PARTITION public.payment_p2022_03_02 FOR VALUES FROM ('2022-03-16 00:00:00+00') TO ('2022-04-01 00:00:00+00');
+
+
+--
 -- Name: payment_p2022_04; Type: TABLE ATTACH; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public.payment ATTACH PARTITION public.payment_p2022_04 FOR VALUES FROM ('2022-04-01 01:00:00+01') TO ('2022-05-01 01:00:00+01');
+
+
+--
+-- Name: payment_p2022_04_01; Type: TABLE ATTACH; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.payment_p2022_04 ATTACH PARTITION public.payment_p2022_04_01 FOR VALUES FROM ('2022-04-01 00:00:00+01') TO ('2022-04-16 00:00:00+01');
+
+
+--
+-- Name: payment_p2022_04_02; Type: TABLE ATTACH; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.payment_p2022_04 ATTACH PARTITION public.payment_p2022_04_02 FOR VALUES FROM ('2022-04-16 00:00:00+01') TO ('2022-05-01 00:00:00+01');
 
 
 --
@@ -1072,6 +1345,20 @@ ALTER TABLE ONLY public.payment ATTACH PARTITION public.payment_p2022_05 FOR VAL
 
 
 --
+-- Name: payment_p2022_05_01; Type: TABLE ATTACH; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.payment_p2022_05 ATTACH PARTITION public.payment_p2022_05_01 FOR VALUES FROM ('2022-05-01 01:00:00+01') TO ('2022-05-16 01:00:00+01');
+
+
+--
+-- Name: payment_p2022_05_02; Type: TABLE ATTACH; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.payment_p2022_05 ATTACH PARTITION public.payment_p2022_05_02 FOR VALUES FROM ('2022-05-16 01:00:00+01') TO ('2022-06-01 01:00:00+01');
+
+
+--
 -- Name: payment_p2022_06; Type: TABLE ATTACH; Schema: public; Owner: postgres
 --
 
@@ -1079,10 +1366,38 @@ ALTER TABLE ONLY public.payment ATTACH PARTITION public.payment_p2022_06 FOR VAL
 
 
 --
+-- Name: payment_p2022_06_01; Type: TABLE ATTACH; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.payment_p2022_06 ATTACH PARTITION public.payment_p2022_06_01 FOR VALUES FROM ('2022-06-01 01:00:00+01') TO ('2022-06-16 01:00:00+01');
+
+
+--
+-- Name: payment_p2022_06_02; Type: TABLE ATTACH; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.payment_p2022_06 ATTACH PARTITION public.payment_p2022_06_02 FOR VALUES FROM ('2022-06-16 01:00:00+01') TO ('2022-07-01 01:00:00+01');
+
+
+--
 -- Name: payment_p2022_07; Type: TABLE ATTACH; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public.payment ATTACH PARTITION public.payment_p2022_07 FOR VALUES FROM ('2022-07-01 01:00:00+01') TO ('2022-08-01 01:00:00+01');
+
+
+--
+-- Name: payment_p2022_07_01; Type: TABLE ATTACH; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.payment_p2022_07 ATTACH PARTITION public.payment_p2022_07_01 FOR VALUES FROM ('2022-07-01 01:00:00+01') TO ('2022-07-16 01:00:00+01');
+
+
+--
+-- Name: payment_p2022_07_02; Type: TABLE ATTACH; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.payment_p2022_07 ATTACH PARTITION public.payment_p2022_07_02 FOR VALUES FROM ('2022-07-16 01:00:00+01') TO ('2022-08-01 01:00:00+01');
 
 
 --
